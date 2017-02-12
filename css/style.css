@@ -29,6 +29,16 @@
 	font-weight: 400;
 }
 
+@font-face {
+	font-family: "PTSans", sans-serif;
+	src: url("..fonts/ptsansbold.eot");
+	src: url("..fonts/ptsansbold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ptsansbold.ttf") format("truetype"),
+	url("../fonts/ptsansbold.woff") format("woff");
+
+	font-weight: 700;
+}
+
 
 
 /*__## стили для тэгов_______
@@ -41,15 +51,23 @@ body {
 
 h2 {
 	font-family: "Cuprum", "Arial", sans-serif;
+	font-weight: 400;
 	font-size: 30px;
 	text-transform: uppercase;
 }
 
 h3 {
-	font-family: "PTSans", "Arial", sans-serif;
-	font-size: 30px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 36px;
 	text-transform: uppercase;
+	color: #32425c;
 }
+
+
+
+/*__## общие стили_______
+---------------------*/
 
 .section {
 	display: block;
@@ -76,6 +94,26 @@ h3 {
 	clear: both;
 }
 
+.headline {
+	width: 910px;
+	height: 89px;
+	margin-top: 53px;
+	padding-left: 30px;
+	vertical-align: middle;
+	line-height: 89px;
+	background-color: #f7f3ec;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 400;
+	color: #32425c;
+}
+
+.headline .btn {
+	position: absolute;
+	top: 25px;
+	right: 23px;
+}
+
 .btn {
 	display: inline-block;
 	height: 38px;
@@ -91,14 +129,22 @@ h3 {
 	text-align: center;
 }
 
+
+
+/*__## header___________
+---------------------*/
+
 .page-header {
-	min-height: 320px;
+	height: 320px;
 	background-color: #f1f5f7;
 }
 
-.header-top {
-	min-height: 45px;
+.section-1 {
 	background-color: #293449;
+}
+
+.header-top {
+	/*min-height: 45px;*/
 	color: #ffffff;
 	font-size: 17px;
 }
@@ -124,7 +170,6 @@ h3 {
 	width: 150px;
 	display: block;
 	float: left;
-	/*margin: 10px;*/
 	vertical-align: middle;
 	text-decoration: none;
 	color: #ffffff;
@@ -154,9 +199,10 @@ h3 {
 
 .order-link {
 	display: inline-block;
-	float: left;
+	float: right;
 	width: 150px;
 	background-color: #63a63e;
+	text-align: center;
 	vertical-align: middle;
 	line-height: 45px;
 }
@@ -166,7 +212,7 @@ h3 {
 	padding-top: 45px;
 }
 
-.description {
+.technomart-info {
 	width: 190px;
 	float: left;
 	margin: 0 70px 0 50px;
@@ -187,9 +233,9 @@ h3 {
 }
 
 .call-us {
-	display: inline-block;
+	display: block;
 	height: 39px;
-	width: 265px;
+	width: 195px;
 	border: solid 3px #ffffff;
 	margin-bottom: 10px;
 	padding-left: 70px;
@@ -206,10 +252,10 @@ h3 {
 .register {
 	display: inline-block;
 	float: left;
-	width: 80px;
+	width: 150px;
 	min-height: 45px;
-	margin-right: 10px;
-	padding: 0 24px;
+	margin-left: 10px;
+	/*padding: 0 25px;*/
 	background-color: #ffffff;
 	color: #000000;
 	text-decoration: none;
@@ -220,17 +266,16 @@ h3 {
 }
 
 .login {
-	/*margin-left: 70px;*/
-}
-
-.register {
-	width: 50px;
-	margin-right: 10px;
+	margin-left: 40px;
+	padding-left: 50px;
+	text-align: left;
+	width: 73px;
 }
 
 .main-menu {
 	width: 940px;
 	min-height: 55px;
+	margin-top: 1px;
 	background-color: #32425c;
 	border-bottom: solid #293449 5px;
 }
@@ -244,10 +289,6 @@ h3 {
 	white-space: nowrap;
 }
 
-.main-menu li:first-child {
-	/*margin-left: -10px;*/
-}
-
 .main-menu a {
 	font-size: 17px;
 	color: #ffffff;
@@ -258,16 +299,118 @@ h3 {
 
 
 
+/*__## footer___________
+---------------------*/
 
+.page-footer {
+	height: 300px;
+	margin-top: 86px;
+}
 
+.footer-top-section {
+	height: 193px;
+	background-color: #32425c;
+}
 
+.footer-bottom-section {
+	height: 107px;
+	background-color: #293449;
+}
 
+.tech-info {
+	position: relative;
+}
 
+.tech-info p {
+	display: block;
+	position: absolute;
+	top: 65px;
+	width: 330px;
+	word-wrap: break-word;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+}
 
+.footer-nav li {
+	display: inline-block;
+	float: left;
+	list-style: none;
+	white-space: nowrap;
+}
 
+.footer-nav a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #ffffff;
+}
 
+.nav-gold a {
+	color: #ffd180;
+}
 
+.nav-white,
+.nav-gold {
+	display: inline-block;
+	margin-left: 50px;
+}
 
+.nav-white li {
+	margin-right: 58px;
+	margin-top: 10px;
+}
+
+.nav-gold li {
+	margin-left: 25px;
+	margin-right: 31px;
+}
+
+.nav-white li:last-child,
+.nav-gold li:last-child {
+	margin-right: 0;
+}
+
+.copyright {
+	display: block;
+	float: left;
+	width: 240px;
+	position: absolute;
+	top: 37px;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+.social {
+	display: block;
+	float: left;
+	margin-top: 35px;
+	margin-left: 85px;
+	width: 133px;
+}
+
+.social-btn {
+	display: block;
+	float: left;
+	width: 41px;
+	height: 41px;
+	margin-right: 5px;
+	border-radius: 50%;
+	background-color: #212a3a;
+}
+
+.social-btn:last-child {
+	margin-right: 0;
+}
+
+.mail,
+.developer {
+	display: block;
+	float: left;
+	color: #ffffff;
+}
+
+/*__## стили для index__
+---------------------*/
 
 .promo {
 	padding-top: 60px;
@@ -293,7 +436,7 @@ h3 {
 	height: 38px;
 	display: inline-block;
 	margin-left: 24px;
-	background-color:rgba(0, 0, 0, 0.2);
+	background-color:rgba(0, 0, 0, 0.1);
 	border-radius: 2px;
 	line-height: 38px;
 	text-align: center;
@@ -307,7 +450,7 @@ h3 {
 	width: 131px;
 	height: 34px;
 	line-height: 34px;
-	border: solid 3px rgba(255, 255, 255, 0.2);
+	border: solid 3px rgba(255, 255, 255, 0.1);
 	border-radius: 0;
 }
 
@@ -341,12 +484,6 @@ h3 {
 	background-color: #f6b22d;
 }
 
-.slider {/*
-	position: absolute;
-	top: 143px;
-	left: 0;*/
-}
-
 .slider-1,
 .slider-2 {
 	list-style: none;
@@ -378,4 +515,157 @@ h3 {
 	font-family: "PTSans", sans-serif;
 	font-size: 18px;
 	color: #ffffff;
+}
+
+.item {
+	display: block;
+	float: left;
+	width: 218px;
+	height: 318px;
+	margin-top: 20px;
+	margin-right: 19px;
+	margin-left: 0;
+	border: 1px solid #e5e5e5;
+}
+
+.item:last-child {
+	margin-right: 0;
+}
+
+.item b {
+	display: block;
+	margin: 0;
+	text-align: center;
+	font-family: "PTSans", sans-serif;
+	font-size: 18px;
+	word-wrap: break-word;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+.item p {
+	margin-top: 13px;
+	font-family: "PTSans", sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.cost-old {
+	min-height: 18px;
+	color: #999999;
+	text-decoration: line-through;
+	line-height: 18px;
+}
+
+.cost-new {
+	position: relative;
+	width: 140px;
+	height: 38px;
+	margin-left: 43px;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 2px 0 0 2px;
+	vertical-align: middle;
+	line-height: 38px;
+}
+
+.cost-new::after {
+	content: "";
+	position: absolute;
+	right: -8px;
+	border: 19px solid #ffffff;
+	border-right-width: 0;
+	border-left-color: #ee3643;
+	border-top-color: #ffffff;
+	border-bottom-color: #ffffff;
+}
+
+.brand {
+	display: inline-block;
+	width: 218px;
+	height: 145px;
+	margin-right: 15px;
+	margin-top: 20px;
+	padding: 0;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 145px;
+}
+
+.brand:nth-child(4n+1) {
+	margin-right: 0;
+}
+
+.brand img {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.services {
+	height: 522px;
+	margin-top: 85px;
+	background-color: #f2f6f8;
+}
+
+.services-inner {
+	position: relative;
+	padding-top: 48px;
+}
+
+.services-inner > span {
+	display: block;
+	width: 480px;
+	word-wrap: break-word;
+	font-family: "PTSans", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.buttons {
+	display: block;
+	float: left;
+	width: 240px;
+	margin-top: 70px;
+}
+
+.buttons .button {
+	display: block;
+	width: 240px;
+	height: 59px;
+	line-height: 59px;
+	background-color: #32425c;
+	border-bottom: 1px solid #293449;
+	border-top: 1px solid #405069;
+
+	font-family: "Cuprum", sans-serif;
+	font-weight: 700;
+	font-size: 21px;
+	color: #ffffff;
+	text-align: left;
+	padding-left: 24px;
+}
+
+.buttons .button::active {
+	background-color: #ffffff;
+	color: #32425c;
+	border: none;
+}
+
+.descriptions {
+	display: block;
+	float: left;
+
+	height: 284px;
+	width: 300px;
+	margin-top: 240px;
+	margin-left: 80px;
+	margin-right: 0;
+}
+
+.description img {
+	position: absolute;
+	top: 262px;
+	right: 0;
 }
